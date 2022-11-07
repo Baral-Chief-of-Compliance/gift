@@ -1,0 +1,83 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Inter', sans-serif;
+    background: black;
+
+}
+
+.message-neon{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 24px;
+    /* color: #F3F3F3; */
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+    position: relative;
+}
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background: #fff;
+    font-size:24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ms5{
+    color: purple;
+}
+
+section{
+    position: relative;
+}
+
+.heart{
+    margin-left:auto; 
+    margin-right:auto; 
+    display:block;
+    margin-top: 5%;
+    transition: 3s;
+}
+
+.pn{
+    background-color: #ef5083;
+}
+
+.we{
+    margin-left:auto; 
+    margin-right:auto; 
+    display:block;
+    margin-top: 5%;
+    transition: 3s;
+}
+
+
+
+
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px purple,
+        0 0 80px purple,
+        0 0 90px purple,
+        0 0 100px purple,
+        0 0 150px purple;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
